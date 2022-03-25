@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+  }
+  html, body {
+    margin:0px;
+  }
+
+  .col {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  .col-6{
+    width: 50%;
+  }
+  .col-4{
+    width: 33.3333%;
+  }
+  .col-3{
+    width: 25%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+    
+  }
+
+  @media screen and (max-width: 600px) {
+    .col {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .col-6 , .col-3  {
+      width: 50%;
+    }
+  }
+  
